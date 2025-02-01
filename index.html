@@ -4,8 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment - 3 - 0002</title>
+    <!-- daisy  ui tailwind cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/e1fdd49bac.js" crossorigin="anonymous"></script>
+    <!-- customize tailwind css script cdn -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'green-primary': '#179800',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .sora{
+            font-family: "Sora", serif;
+        }
+      </style>
 </head>
-<body>
+<body class="sora">
+     <header class=" border border-red-300"> <!-- bg-gradient-to-br from-gray-500 to-gray-50 -->
+
+        <!--  navbar section -->
+
+        <nav class="md:container mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <img class="lg:hidden px-4" src="/c2-assets/Group.png" alt="">
+                  <img src="/c2-assets/logo-header.png" class="invisible lg:visible">
+                  
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1  text-xl">
+                    <li><a>Product</a></li>
+                    <li>
+                      <a href="">Services</a>
+                    </li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end invisible lg:visible space-x-2 ">
+                    <a href=""><i class="fa-solid fa-magnifying-glass text-3xl mr-5 "></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping text-3xl mr-5 text-gray-700"></i></a>
+                    <button class="btn btn-outline btn-success px-6 text-xl text-gray-700">Login</button>
+                  <a class="btn bg-green-primary text-white px-6 text-xl">Register</a>
+                </div>
+                <div class="flex-none lg:hidden px-4">
+                    <button class="btn btn-square btn-ghost ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="inline-block h-14 w-14 stroke-current text-green-600">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                    </button>
+                  </div>
+              </div>
+        </nav>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
