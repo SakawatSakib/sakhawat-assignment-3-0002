@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment - 3 - 0002</title>
+    <link rel="shortcut icon" href="c2-assets/Group.png" type="image/x-icon">
     <!-- daisy  ui tailwind cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,9 +33,11 @@
                     animation: {
                         'wiggle': 'wiggle 2.9s ease-in-out infinite',
                         'bounce-slow': 'bounce 2s infinite',
+                        
                     },
                     // custom keyframes below  
                     keyframes: {
+                        
                         wiggle: {
                             '0%, 100%': {
                                 'transform': 'rotate(-3deg)',
@@ -47,6 +50,7 @@
                             '0%, 100%': { transform: 'translateY(0)' },
                             '50%': { transform: 'translateY(-15%)' },
                         },
+                        
                     }
                 }
             }
@@ -58,12 +62,12 @@
         .sora {
             font-family: "Sora", serif;
         }
-        
+
     </style>
 </head>
 
 <body class="sora">
-    <header class=" border border-red-300 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] mb-4">
+    <header class=" border border-red-300 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] mb-10 overflow-hidden">
         <!-- bg-gradient-to-br from-gray-500 to-gray-50 -->
 
         <!--  navbar section -->
@@ -110,11 +114,11 @@
             <div>
                 <div class=" px-4  text-center ">
                     <h1 class="md:text-5xl text-4xl  font-bold text-[#111111] ">
-                        <span class="">Freshness 
-                        <span
-                            class="text-green-primary leading-tight letter animate-pulse inline-block">You Can  </span><br>
+                        <span class="">Freshness
+                            <span class="text-green-primary leading-tight letter animate-pulse inline-block">You Can
+                            </span><br>
                             <span class="inline-block text-green-primary animate-ping">Count</span>
-                            On , 
+                            On ,
                             Prices You’ll Love!
                     </h1>
 
@@ -126,8 +130,8 @@
                 </div>
                 <!-- banner image content  -->
                 <div
-                    class="border border-blue-700 rounded-full justify-items-center animate-wiggle overflow-y-hidden  origin-bottom">
-                    <img class="overflow-hidden" src="c2-assets/hero-vegetables.png" alt="">
+                    class="bg-transparent border border-gray-700 drop-shadow-2xl rounded-b-full justify-items-center animate-wiggle  overflow-hidden  origin-bottom ">
+                    <img class="" src="c2-assets/hero-vegetables.png" alt="">
                 </div>
 
             </div>
@@ -136,7 +140,7 @@
         <div class="rounded-lg text-center justify-center  items-center bg-gradient-to-b from-[#f0eee8] to-[#fcecb3]">
 
             <!-- down arrow animation first part -->
-            <svg class="animate-bounce lg:w-12 lg:h-12 w-8 h-8  bg-[#88C273] rounded-full fa-solid fa-arrow-down text-white"
+            <svg class="animate-bounce lg:w-12 lg:h-12 w-8 h-8 mt-1 bg-[#88C273] rounded-full fa-solid fa-arrow-down text-white"
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
             </svg>
@@ -150,6 +154,62 @@
 
     </header>
     <main>
+       
+         <!-- services section  -->
+          <section class="my-40 md:container mx-auto border border-purple-600 ">
+
+            <div class="mx-10 ">
+                <h3 class="text-green-primary text-3xl font-bold mb-10  relative lg:left-8">Services</h3>
+               <!-- three cards  -->
+                <div class="grid grid-cols-1 lg:grid-cols-3  gap-8 lg:pl-8">
+                    <!-- card-1  -->
+                    <div class="card bg-[#EFEBE3]  shadow-xl items-center text-center w-full">
+                        <figure class="shadow-xl w-23 rounded-full bg-[#FFFFFF] m-5">
+                          <img
+                            src="c2-assets/service.png"
+                            alt="Shoes"
+                            class="p-5" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-[#111111]">24/7 Services </h2>
+                          <p class="text-[#4b4444] ">we are committed to making your shopping experience convenient and accessible anytime, day or night. With a wide range of quality groceries at your fingertips, you can order essential items whenever you need them. Enjoy hassle-free delivery right to your doorstep, ensuring you never run out of your favorite products, no matter the hour</p>
+                          
+                        </div>
+                      </div>
+                    <!-- card-2  -->
+                    <div class="card bg-[#EFEBE3]  shadow-xl items-center text-center w-full">
+                        <figure class="shadow-xl  w-23 rounded-full bg-[#FFFFFF] m-5">
+                          <img
+                            src="c2-assets/delivery.png"
+                            alt="Shoes"
+                            class="p-5" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-[#111111]">Fast Delivery</h2>
+                          <p class="text-[#4b4444] ">Get your groceries delivered quickly and conveniently with our fast delivery service! We bring fresh produce, pantry essentials, and more right to your door, ensuring you have everything you need without the hassle. Shop online and experience seamless service that fits your busy lifestyle!</p>
+                          
+                        </div>
+                      </div>
+                    <!-- card-3  -->
+                    <div class="card bg-[#EFEBE3]  shadow-xl items-center text-center w-full">
+                        <figure class="shadow-xl   rounded-full   bg-[#FFFFFF] m-5">
+                          <img
+                            src="c2-assets/healthy.png"
+                            alt="Shoes"
+                            class=" p-5 h-50" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-[#111111]">Healthy Products</h2>
+                          <p class="text-[#4b4444] ">Discover our selection of pure and fresh healthy products, curated to nourish your body and mind. We prioritize quality and sustainability, sourcing only the best organic fruits, vegetables, and pantry staples. Shop with us for a commitment to health, flavor, and wellness in every bite!</p>
+                          
+                        </div>
+                      </div>
+
+
+                </div>
+            </div>
+
+          </section>
 
 
     </main>
