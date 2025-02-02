@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,76 +19,85 @@
     <!-- customize tailwind css script cdn -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'green-primary': '#179800',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'green-primary': '#179800',
+                    }
+                }
             }
-          }
         }
-      </script>
-      <style>
-        .sora{
+    </script>
+    <style>
+        .sora {
             font-family: "Sora", serif;
         }
-      </style>
+    </style>
 </head>
+
 <body class="sora">
-     <header class=" border border-red-300"> <!-- bg-gradient-to-br from-gray-500 to-gray-50 -->
+    <header class=" border border-red-300 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] ">
+        <!-- bg-gradient-to-br from-gray-500 to-gray-50 -->
 
         <!--  navbar section -->
 
-        <nav class="md:container mx-auto">
-            <div class="navbar">
+        <nav class="md:container mx-auto border border-green-600">
+            <div class="navbar  ">
                 <div class="navbar-start">
                     <img class="lg:hidden px-4" src="c2-assets/Group.png" alt="">
-                  <img src="c2-assets/logo-header.png" class="invisible lg:visible">
-                  
+                    <img src="c2-assets/logo-header.png" class="invisible lg:visible">
+
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1  text-xl">
-                    <li><a>Product</a></li>
-                    <li>
-                      <a href="">Services</a>
-                    </li>
-                    <li><a>Contact us</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal px-1  text-xl">
+                        <li><a>Product</a></li>
+                        <li>
+                            <a href="">Services</a>
+                        </li>
+                        <li><a>Contact us</a></li>
+                    </ul>
                 </div>
                 <div class="navbar-end invisible lg:visible space-x-2 ">
                     <a href=""><i class="fa-solid fa-magnifying-glass text-3xl mr-5 "></i></a>
                     <a href=""><i class="fa-solid fa-cart-shopping text-3xl mr-5 text-gray-700"></i></a>
                     <button class="btn btn-outline btn-success px-6 font-bold text-gray-700">Login</button>
-                  <a class="btn bg-green-primary text-white px-6 font-bold">Register</a>
+                    <a class="btn bg-green-primary text-white px-6 font-bold">Register</a>
                 </div>
                 <div class="flex-none lg:hidden px-4">
                     <button class="btn btn-square btn-ghost ">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        class="inline-block h-14 w-14 stroke-current text-green-600">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16"></path>
-                      </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block h-14 w-14 stroke-current text-green-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
                     </button>
-                  </div>
-              </div>
+                </div>
+            </div>
         </nav>
-
-        <br> 
+        
+        <br>
 
         <!-- banner section  -->
-         <section>
-            <div>
-                <h1 class="text">Freshness <span class="text-green-primary">You Can</span>  <br>
-                    <span class="text-green-primary">Count</span> On, Prices You’ll Love!</h1>
+        <section class="lg:mt-20 mt-10 border border-blue-700 container mx-auto ">
+            <!-- banner text content  -->
+            <div >
+                <div class=" px-4  text-center ">
+                    <h1 class="md:text-5xl text-4xl  font-bold text-[#111111] ">Freshness <span class="text-green-primary leading-tight">You Can <br>
+                         Count</span> On, Prices You’ll Love!
+                    </h1>
+
+                    <br>
+
+                    <p class="text-[#242323] text-xl leading-relaxed">Shop your daily essentials at unbeatable prices. From fresh produce
+                        to pantry <br> staples, we’ve got you covered every day!</p>
+                </div>
+                <!-- banner image content  -->
+                <div class="border border-blue-700 justify-items-center">
+                    <img class="" src="c2-assets/hero-vegetables.png" alt="">
+                </div>
             </div>
-         </section>
+        </section>
 
     </header>
     <main>
@@ -96,6 +106,7 @@
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
