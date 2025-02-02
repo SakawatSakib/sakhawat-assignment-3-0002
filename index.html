@@ -21,18 +21,44 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    transformOrigin: {
+                        'top-left-1/3-3/4': '73% 75%',
+                    },
                     colors: {
                         clifford: '#da373d',
                         'green-primary': '#179800',
+                    },
+                    // custom animation 
+                    animation: {
+                        'wiggle': 'wiggle 2.9s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                    // custom keyframes below  
+                    keyframes: {
+                        wiggle: {
+                            '0%, 100%': {
+                                'transform': 'rotate(-3deg)',
+                            },
+                            '50%': {
+                                'transform': 'rotate(3deg)',
+                            },
+                        },
+                        bounce: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15%)' },
+                        },
                     }
                 }
             }
-        }
+        }    
     </script>
+
+
     <style>
         .sora {
             font-family: "Sora", serif;
         }
+        
     </style>
 </head>
 
@@ -75,29 +101,52 @@
                 </div>
             </div>
         </nav>
-        
+
         <br>
 
         <!-- banner section  -->
-        <section class="lg:mt-20 mt-10 border border-blue-700 container mx-auto ">
-            <!-- banner text content  -->
-            <div >
+        <section class="lg:mt-20 mt-10 border border-blue-700  container mx-auto ">
+            <!-- banner text content  (h1class= animate-bounce-slow = for full h1 up down slowly animation)-->
+            <div>
                 <div class=" px-4  text-center ">
-                    <h1 class="md:text-5xl text-4xl  font-bold text-[#111111] ">Freshness <span class="text-green-primary leading-tight">You Can <br>
-                         Count</span> On, Prices You’ll Love!
+                    <h1 class="md:text-5xl text-4xl  font-bold text-[#111111] ">
+                        <span class="">Freshness 
+                        <span
+                            class="text-green-primary leading-tight letter animate-pulse inline-block">You Can  </span><br>
+                            <span class="inline-block text-green-primary animate-ping">Count</span>
+                            On , 
+                            Prices You’ll Love!
                     </h1>
 
                     <br>
 
-                    <p class="text-[#242323] text-xl leading-relaxed">Shop your daily essentials at unbeatable prices. From fresh produce
+                    <p class="text-[#242323] text-xl leading-relaxed">Shop your daily essentials at unbeatable prices.
+                        From fresh produce
                         to pantry <br> staples, we’ve got you covered every day!</p>
                 </div>
                 <!-- banner image content  -->
-                <div class="border border-blue-700 justify-items-center">
+                <div
+                    class="border border-blue-700 rounded-full justify-items-center animate-wiggle absoule overflow-hidden origin-bottom">
                     <img class="" src="c2-assets/hero-vegetables.png" alt="">
                 </div>
+
             </div>
         </section>
+        <!-- extra section added  -->
+        <div class="rounded-lg text-center justify-center items-center bg-gradient-to-b from-[#f0eee8] to-[#fcecb3]">
+
+            <!-- down arrow animation first part -->
+            <svg class="animate-bounce lg:w-12 lg:h-12 w-8 h-8  bg-[#88C273] rounded-full fa-solid fa-arrow-down text-white"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
+            </svg>
+            <!-- extra section second part marquee text content -->
+            <marquee class="text-xl " behavior="scroll" direction=""> <span class="text-red-500 font-bold ">Discount
+                    (15%)</span> on Fruits till 05-february-2025 Shop in chittagong Branch , Counter No - 101 , kids
+                corner is also free for play No tickets needed. Enjoy </marquee>
+
+        </div>
+
 
     </header>
     <main>
