@@ -19,6 +19,7 @@
     <script src="https://kit.fontawesome.com/e1fdd49bac.js" crossorigin="anonymous"></script>
     <!-- customize tailwind css script cdn -->
     <script>
+        // there is some changes i made in animation while coding so some code have not been erased 
         tailwind.config = {
             theme: {
                 extend: {
@@ -34,7 +35,7 @@
                     animation: {
                         'wiggle': 'wiggle 2.9s ease-in-out infinite',
                         'bounce-slow': 'bounce 2s infinite',
-                        'fadeIn': 'fadeIn 4s ease-in-out'
+                        'fadeIn': 'fadeIn 3s ease-in 1',
                         
                     },
                     // custom keyframes below  
@@ -220,25 +221,25 @@
           </section>
     
     <!-- Popular products  -->
-     <section class="#EFEBE3 w-full h-30 border border-red-500">
-        <div class="my-40 md:container mx-auto border border-yellow-700 ">
+     <section class="#EFEBE3  bg-[#EFEBE3] mb-24 overflow-hidden">
+        <div class="py-40 md:container mx-auto relative   overflow-visible border border-red-400">
             <!-- popular title  -->
 
-            <h3 class="text-green-primary text-3xl font-bold mb-10  relative lg:left-8">Popular Products</h3>
+            <h3 class="text-green-primary text-3xl font-bold mb-10  relative lg:ml-28 left-10">Popular Products</h3>
 
             <!-- cards  -->
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-3 gap-5 p-10">
-                <!-- first full column  -->
-                <div class="rounded-xl lg:w-3/5  shadow-xl bg-gradient-to-br from-[#40ff40] to-slate-100 border border-blue-700 row-span-3 pl-4 pt-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2  items-center justify-items-center lg:gap-0 gap-8 border border-red-400 lg:mr-16">
+                <!-- first full column lg:w-3/5  -->
+                <div class="rounded-xl shadow-xl bg-gradient-to-br from-[#40ff40] to-slate-100  lg:w-7/12 pl-4 pt-4 w-10/12  lg:left-0 relative">
                     <div class="">
-                      <h2 class="font-bold text-white text-2xl py-2">30% off</h2>
+                      <h2 class="font-semibold text-white text-2xl py-2">30% off</h2>
                       <p class="text-[#312525] py-2">Discover a world treats and toy essentia handpicked for</p>
                       <button class="btn">
                         Buy Now
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-6 w-6"
+                          class="h-6 w-6 text-red-600 "
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
@@ -250,28 +251,133 @@
                         </svg>
                       </button>
                     </div>
-                    <div class="border border-red-600 flex justify-end">
+                    <div class=" flex justify-end">
                       <img
                         src="c2-assets/vegetable-offer.png"
-                        alt="Shoes" class="border border-green-600 " />
+                        alt="Shoes" class=" " />
                     </div>    
                   </div>
                  <!-- second multi column -->
-                  <div>
+                  <div class="grid gap-5  grid-cols-2 grid-rows-4 lg:grid-cols-3 lg:grid-rows-3  lg:mt-3  w-11/12 lg:w-max  lg:mr-16 lg:pr-10 relative ">
+                    <!--unit 1 -->
+                    <div class=" rounded-lg w-full h-24 lg:w-64  lg:h-4/5 flex  p-3 bg-[#FFFFFF] ">
+                        <!-- img  -->
+                        <div class="bg-[#EFEBE3]  rounded-lg "><img src="c2-assets/onion.png" alt="" srcset="" class="pl-3  pt-3 text-center "></div>
+                        <!-- text  -->
+                         <div class="lg:p-4  pl-2 pt-1">
+                            <i class="fa-solid fa-star text-orange-500"> <span class="text-black">4.5</span></i>
+                            <h2 class="font-semibold lg:text-xl text-[13.2px] ">Onion 1 KG</h2>
+                            <p class="font-semibold"> $39.99</p>
+
+                         </div>
+                    </div>
+                    <!--unit 2 -->
+                    <div class=" rounded-lg w-full h-24 lg:w-64  lg:h-4/5 flex  p-2 bg-[#FFFFFF]">
+                        <!-- img  -->
+                        <div class="bg-[#EFEBE3]  rounded-lg "><img src="c2-assets/onion.png" alt="" srcset="" class="pl-3  pt-3 text-center "></div>
+                        <!-- text  -->
+                         <div class="lg:p-4  pl-2 pt-1">
+                            <i class="fa-solid fa-star text-orange-500"> <span class="text-black">4.5</span></i>
+                            <h2 class="font-semibold lg:text-xl text-[13.2px] ">Onion 1 KG</h2>
+                            <p class="font-semibold"> $39.99</p>
+
+                         </div>
+                    </div>
+                    <!--unit 3 -->
+                    <div class=" rounded-lg w-full h-24 lg:w-64  lg:h-4/5 flex  p-2 bg-[#FFFFFF]">
+                        <!-- img  -->
+                        <div class="bg-[#EFEBE3]  rounded-lg "><img src="c2-assets/onion.png" alt="" srcset="" class="pl-3  pt-3 text-center "></div>
+                        <!-- text  -->
+                         <div class="lg:p-4  pl-2 pt-1">
+                            <i class="fa-solid fa-star text-orange-500"> <span class="text-black">4.5</span></i>
+                            <h2 class="font-semibold lg:text-xl text-[13.2px] ">Onion 1 KG</h2>
+                            <p class="font-semibold"> $39.99</p>
+
+                         </div>
+                    </div>
+                    <!--unit 4 -->
+                    <div class=" rounded-lg w-full h-24 lg:w-64  lg:h-4/5 flex  p-2 bg-[#FFFFFF]">
+                        <!-- img  -->
+                        <div class="bg-[#EFEBE3]  rounded-lg "><img src="c2-assets/onion.png" alt="" srcset="" class="pl-3  pt-3 text-center "></div>
+                        <!-- text  -->
+                         <div class="lg:p-4  pl-2 pt-1">
+                            <i class="fa-solid fa-star text-orange-500"> <span class="text-black">4.5</span></i>
+                            <h2 class="font-semibold lg:text-xl text-[13.2px] ">Onion 1 KG</h2>
+                            <p class="font-semibold"> $39.99</p>
+
+                         </div>
+                    </div>
+                    <!--unit 5 -->
+                    <div class=" rounded-lg w-full h-24 lg:w-64  lg:h-4/5 flex  p-2 bg-[#FFFFFF]">
+                        <!-- img  -->
+                        <div class="bg-[#EFEBE3]  rounded-lg "><img src="c2-assets/onion.png" alt="" srcset="" class="pl-3  pt-3 text-center "></div>
+                        <!-- text  -->
+                         <div class="lg:p-4  pl-2 pt-1">
+                            <i class="fa-solid fa-star text-orange-500"> <span class="text-black">4.5</span></i>
+                            <h2 class="font-semibold lg:text-xl text-[13.2px] ">Onion 1 KG</h2>
+                            <p class="font-semibold"> $39.99</p>
+
+                         </div>
+                    </div>
+                    <!--unit 6 -->
+                    <div class=" rounded-lg w-full h-24 lg:w-64  lg:h-4/5 flex  p-2 bg-[#FFFFFF]">
+                        <!-- img  -->
+                        <div class="bg-[#EFEBE3]  rounded-lg "><img src="c2-assets/onion.png" alt="" srcset="" class="pl-3  pt-3 text-center "></div>
+                        <!-- text  -->
+                         <div class="lg:p-4  pl-2 pt-1">
+                            <i class="fa-solid fa-star text-orange-500"> <span class="text-black">4.5</span></i>
+                            <h2 class="font-semibold lg:text-xl text-[13.2px] ">Onion 1 KG</h2>
+                            <p class="font-semibold"> $39.99</p>
+
+                         </div>
+                    </div>
+                    <!--unit 7 -->
+                    <div class=" rounded-lg w-full h-24 lg:w-64  lg:h-4/5 flex  p-2 bg-[#FFFFFF]">
+                        <!-- img  -->
+                        <div class="bg-[#EFEBE3]  rounded-lg "><img src="c2-assets/onion.png" alt="" srcset="" class="pl-3  pt-3 text-center "></div>
+                        <!-- text  -->
+                         <div class="lg:p-4  pl-2 pt-1">
+                            <i class="fa-solid fa-star text-orange-500"> <span class="text-black">4.5</span></i>
+                            <h2 class="font-semibold lg:text-xl text-[13.2px] ">Onion 1 KG</h2>
+                            <p class="font-semibold"> $39.99</p>
+
+                         </div>
+                    </div>
+                    <!--unit 8 -->
+                    <div class=" rounded-lg w-full h-24 lg:w-64  lg:h-4/5 flex  p-2 bg-[#FFFFFF]">
+                        <!-- img  -->
+                        <div class="bg-[#EFEBE3]  rounded-lg "><img src="c2-assets/onion.png" alt="" srcset="" class="pl-3  pt-3 text-center "></div>
+                        <!-- text  -->
+                         <div class="lg:p-4  pl-2 pt-1">
+                            <i class="fa-solid fa-star text-orange-500"> <span class="text-black">4.5</span></i>
+                            <h2 class="font-semibold lg:text-xl text-[13.2px] ">Onion 1 KG</h2>
+                            <p class="font-semibold"> $39.99</p>
+
+                         </div>
+                    </div>
+                    <!--unit 9 -->
+                    <div class=" rounded-lg w-full h-24 lg:w-64  lg:h-4/5 lg:flex  p-2  lg:visible hidden bg-[#FFFFFF]">
+                        <!-- img  -->
+                        <div class="bg-[#EFEBE3]  rounded-lg "><img src="c2-assets/onion.png" alt="" srcset="" class="pl-3  pt-3 text-center "></div>
+                        <!-- text  -->
+                         <div class="lg:p-4  pl-2 pt-1">
+                            <i class="fa-solid fa-star text-orange-500"> <span class="text-black">4.5</span></i>
+                            <h2 class="font-semibold lg:text-xl text-[13.2px] ">Onion 1 KG</h2>
+                            <p class="font-semibold"> $39.99</p>
+
+                         </div>
+                    </div>
+                    
 
                   </div>
 
             </div>
 
-
-
-
-
-
         </div>
 
      </section>
 
+     
 
     </main>
     <footer>
