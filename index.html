@@ -378,14 +378,14 @@
      </section>
 
     <!-- arrival and offer section  -->
-     <section class="my-60 border border-red-600  md:container mx-auto">
+     <section class="my-60 border border-red-600  md:container mx-auto ">
         
-        <div class="  lg:ml-24 lg:pl-24  ">
+        <div class="  lg:ml-24 lg:pl-30 ">
             <h1 class="text-green-primary lg:text-3xl text-3xl p-4 font-bold lg:mb-10 ">Arrival & Offers</h1>
             <!-- two cards  -->
             <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-24 gap-7 " >
                 <!-- first arrival card -->
-                 <div class="bg-[#115414]  flex lg:text-center lg:justify-center lg:items-center rounded-lg  lg:w-max w-11/12  mx-auto">
+                 <div class="bg-[#115414]  flex lg:text-center lg:justify-center lg:items-center rounded-lg  lg:w-max w-11/12  mx-auto shadow-lg shadow-[#61b665]">
                     <!-- text with small image  -->
                   <div class=" mb-20 mt-20 pl-5">
                     <img class="lg:mb-5 lg:w-3/4 w-3/4" src="c2-assets/dawat-logo.png" alt="">
@@ -402,7 +402,7 @@
 
                  </div>
                  <!-- second column  card -->
-                 <div class="bg-[#102861] lg:w-4/5 rounded-lg flex text-center justify-center items-center  w-11/12  mx-auto">
+                 <div class="bg-[#102861] lg:w-4/5 rounded-lg flex text-center justify-center items-center  w-11/12  mx-auto shadow-lg shadow-[#5e79b8]">
                     <!-- text with small image  -->
                   <div class="lg:mb-10 pl-1  relative left-0">
                     <img class="lg:mb-2 lg:w-5/12" src="c2-assets/india-gate-logo.png" alt="">
@@ -425,29 +425,68 @@
 
      </section>
 
-     <!-- Get Grocery News  -->
-      <section class="border border-red-400 my-10  md:container mx-auto ">
-         <div class="lg:p-24 p-7">
-            <div class="hero bg-[#EFEBE3] rounded-xl shadow-2xl lg:p-10">
-                <div class="hero-content flex-col lg:flex-row">
-                  <img
-                    src="c2-assets/vegetable-busket.png"
-                    class="max-w-sm rounded-lg " />
-                  <div>
-                    <h1 class="text-5xl font-bold">Get Grocery News!</h1>
-                    <p class="py-6">
-                        Exclusive training tips, ticks, product deals and more.
-                    </p>
-                    <input type="text" placeholder="Email.." class="input input-bordered w-full h-16  mb-8 lg:max-w-xl " />
-                    <button class="btn bg-green-primary text-white text-[17px] w-4/12">Subscribe</button>
-                  </div>
-                </div>
-              </div>
-         </div>
-      </section>
+    
 
     </main>
-    <footer>
+    <section class="border border-red-400 my-10 md:container lg:mx-auto relative mx-4">
+        <div class="lg:p-24 p-7">
+           <div class=" absolute -left-0 -top-[170px]  lg:-top-1 hero bg-[#EFEBE3] rounded-xl shadow-xl lg:p-10 " >
+               <div class="hero-content flex-col lg:flex-row">
+                 <img
+                   src="c2-assets/vegetable-busket.png"
+                   class="max-w-sm rounded-lg " />
+                 <div>
+                   <h1 class="text-5xl font-bold">Get Grocery News!</h1>
+                   <p class="py-6">
+                       Exclusive training tips, ticks, product deals and more.
+                   </p>
+                   <input type="text" placeholder="Email.." class="input input-bordered w-full h-16  mb-8 lg:max-w-xl " />
+                   <button class="btn bg-green-primary text-white text-[17px] w-4/12">Subscribe</button>
+                 </div>
+               </div>
+             </div>
+        </div>
+     </section>
+    <footer class=" bg-[#179800] lg:pt-56 pt-96">
+
+      <!-- footer first part  Get Grocery News  -->
+     
+
+
+
+        <!-- footer second part  -->
+
+        <div class="flex lg:flex-row flex-col justify-between p-10">
+            <!-- start  -->
+            <div class="text-white pb-4 space-y-2">
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p class="text-[#FFFFFFB3]">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+
+
+            </div>
+             <!-- middle -->
+              <div class="text-[#EFEBE3] lg:pb-4 pb-8">
+                <ul class="space-y-2 text-xl">
+                    <li class="hover:text-[#ee7a74]"><a href="">Product</a></li>
+                    <li class="hover:text-[#ee7a74]"><a href="">Services</a></li>
+                    <li class="hover:text-[#ee7a74]"><a href="">Contact us  </a></li>
+                </ul>
+              </div>
+
+             <!-- end -->
+              <div class="text-white space-y-3 text-xl" >
+                <p class="text-[15px]">Follow Us</p>
+               <div class="space-x-7 cursor-pointer ">
+                <i class="fa-brands fa-facebook hover:text-[#40a8d8]"></i>
+                <i class="fa-brands fa-instagram hover:text-[#e0825c]"></i>
+                <i class="fa-brands fa-linkedin hover:text-[#3d5d99]"></i>
+                <i class="fa-brands fa-youtube hover:text-[#ff3f35]"></i>
+               </div>
+
+              </div>
+
+
+        </div>
 
 
     </footer>
